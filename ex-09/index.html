@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function nhap(arr) {
+          let index = Number(prompt("Nhap so phan tu cua mang"));
+          for (let i = 0; i < index; i++) {
+            let k = prompt("Nhap phan tu thu " + i);
+            arr.push(k);
+          }
+          let a = prompt("Nhap ky tu muon kiem tra");
+          let cnt = 0;
+          for (let i = 0; i < index; i++) {
+            if (arr[i] == a) cnt += 1;
+          }
+          if (cnt == 0) alert("-1");
+          else document.write("So lan xuat hien trong mang la " + cnt);
+        }
+        let arr = [];
+        nhap(arr);
+    </script>
+</body>
+</html>

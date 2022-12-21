@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function taoMang(arr) {
+          let index = Number(prompt("Nhap so phan tu cua mang"));
+          for (let i = 0; i < index; i++) {
+            let num = Number(prompt("Nhap phan tu thu " + i));
+            arr.push(num);
+          }
+          document.write("mang da nhap: " + arr + "<br>");
+          for (let i = 0; i < arr.length; i++) {
+                if (i < arr.length - 1 - i) {
+                    let x = arr[i];
+                    arr[i] = arr[arr.length - 1 - i];
+                    arr[arr.length - 1 - i] = x;
+                }
+            }
+          document.write("mang dao nguoc: " + arr);
+        }
+        let arr = [];
+        taoMang(arr);
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function dienTich(r) {
+            return pi * Math.pow(r,2);
+        }
+        function chuVi(r) {
+            return pi * 2 * r;
+        }
+        let pi = 3.14;
+        let num = Number(prompt("Nhap ban kinh hinh tron"));
+        document.write("Dien tich la " + dienTich(num).toFixed(2) + "<br>");
+        document.write("Chu vi la " + chuVi(num).toFixed(2));
+    </script>
+</body>
+</html>
